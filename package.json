@@ -1,4 +1,8 @@
 {
+    "scripts": {
+        "build": "tsc",
+        "try": "tsc quali.ts; node quali.js"
+    },
     "dependencies": {
         "node-fetch": "^3.2.3"
     },
