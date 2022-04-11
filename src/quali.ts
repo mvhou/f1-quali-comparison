@@ -1,13 +1,8 @@
 import * as fs from 'fs';
 
-import { qTime, unavailable, driverResult, searchResult } from './types'
+import { searchResult } from './types'
 
 import * as conv from './conversions'
-
-const log = (x:any, name:string=''):any => {
-    console.log(x)
-    return (x)
-}
 
 const driverNumbers:string[] = [
     '44',
