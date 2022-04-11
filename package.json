@@ -1,9 +1,12 @@
 {
     "scripts": {
         "build": "tsc",
-        "test": "jest"
+        "test": "jest",
+        "quali": "node build/index.js",
+        "quick": "npm run build; npm run quali"
     },
     "dependencies": {
+        "mvhou-ts": "^0.0.9",
         "node-fetch": "^3.2.3"
     },
     "devDependencies": {
