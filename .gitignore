@@ -2,7 +2,7 @@
 node_modules
 
 ## build files
-lib
+build
 
 ## package-lock
 package-lock.json
