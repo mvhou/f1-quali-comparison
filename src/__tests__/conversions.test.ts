@@ -1,7 +1,19 @@
 import * as conv from '../conversions'
+import { testInOut } from '../test-utilities/utils'
+import { stringToMs, msToString } from '../test-utilities/conversion-tests'
 
-describe('Conversion tests', () => {
-    test('conv.toMs("0:00.000")', ()=> {
-        expect(conv.toMs("0:00.000")).toStrictEqual(0)
-    })
-})
+describe('string to ms conversion', () => {
+    stringToMs.forEach((t:testInOut) => {
+        test(`conv.toMs(${t.input})`, () => {
+            expect(conv.toMs(t.input)).toStrictEqual(t.output);
+        });
+    });
+});
+
+describe('ms to string conversion', () => {
+    msToString.forEach((t:testInOut) => {
+        test(`conv.toString(${t.input})`, () => {
+            expect(conv.toString(t.input)).toStrictEqual(t.output);
+        });
+    });
+});
