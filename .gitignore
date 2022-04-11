@@ -1,5 +1,8 @@
+## node modules
 node_modules
 
-quali.js
+## build files
+src
 
+## package-lock
 package-lock.json
